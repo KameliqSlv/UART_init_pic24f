@@ -164,7 +164,7 @@ unsigned int ADC_read(unsigned char channel){
 void GPIO_init(void){
     ANSAbits.ANSA2 = 0;
     TRISAbits.TRISA2 = 0;
-    LATAbits.LATA2 = 1; // ?? ?? ? ????????
+    LATAbits.LATA2 = 1; 
 }
 
 //void PWM_init(void){
@@ -199,10 +199,11 @@ int main(int argc, char** argv) {
         }
 //        if(U1STAbits.URXDA){
 //            char received_char = U1RXREG;
-//            while(U1STAbits.UTXBF);         //??? ?????? ? ????? ?? ??????
+//            while(U1STAbits.UTXBF);         
 //            U1TXREG = received_char;
 //        }
     }
     return (EXIT_SUCCESS);
 }
+
 
